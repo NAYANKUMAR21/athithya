@@ -1,0 +1,71 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+}
+img {
+  width: 100%;
+}
+.logo {
+  margin-top: 10px;
+  width: 15%;
+}
+ul {
+  width: 80%;
+  display: flex;
+
+  margin-left: 60px;
+  margin-top: 8px;
+}
+li {
+  list-style: none;
+  /* margin-left: 20px; */
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+li:nth-child(1) > div:nth-child(1) {
+  width: 20%;
+}
+
+input[type='text'] {
+  padding: 10px;
+  width: 600px;
+  background-color: rgb(229, 243, 243);
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.input-search {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.input-search > div:nth-child(1) {
+  width: 15%;
+}
+.li-text {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+}
+.profile-logo {
+  margin-top: 10px;
+}
+.profile-logo > img {
+  width: 70%;
+}
+.middle-logo {
+  width: 20%;
+}
+.ThreeDots {
+  width: 3%;
+  margin-top: 10px;
+}
