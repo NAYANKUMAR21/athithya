@@ -1,20 +1,40 @@
+<!-- actual DOM -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Numeron</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
   </head>
+  <body>
+    <div id="react-container"></div>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
 
-  <body class="game-cover flex-centered">
-    <img id="logo" src="./assets/numberon_image.png" alt="logo" />
-    <img
-      class="play"
-      id="play-button"
-      src="./assets/play_button.png"
-      alt="play-button"
-    />
-    <script src="./app.js"></script>
+    <script type="text/babel">
+      class ReactComponent extends React.Component {
+        render() {
+          return (
+            <div>
+              Hello! Welcome to Kalvium
+              <div>This is babel</div>
+            </div>
+          );
+        }
+      }
+
+      const container = document.getElementById('react-container');
+      // Direclty pass the component to render
+      ReactDOM.render(<ReactComponent />, container);
+    </script>
+    <script src="./Class.js"></script>
   </body>
+  <!-- <script src="./function.js"></script> -->
 </html>
